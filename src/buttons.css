@@ -1,0 +1,35 @@
+.button-container {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-muted {
+  background-color: #dcebe4;
+  color: #3f6f5b;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #1f6f4a;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}

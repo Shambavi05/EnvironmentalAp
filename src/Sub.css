@@ -1,0 +1,27 @@
+.LetsConnect {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.LetsConnect:hover{
+    background-color: darkgreen;
+}
+
+/* Hero.css or your CSS file */
+.flippingImage {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  transition: transform 0.6s; /* smooth animation */
+  transform-style: preserve-3d;
+}
+
+.flippingImage:hover {
+  transform: rotateY(180deg); /* flips horizontally */
+}
