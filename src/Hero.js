@@ -35,7 +35,7 @@ export default function Hero() {
 
   {/* Text on top */}
   <div style={{ zIndex: 2 }}>
-    <h1 style={{ fontSize: "80px", marginBottom: "20px" }}>
+    <h1 style={{ fontSize: "70px", marginBottom: "20px" }}>
   Leading Experts in Sustainable <br />
   <span className="highlight-text">Land Development &</span> <br />
   Reforestation
