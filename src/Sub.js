@@ -1,5 +1,5 @@
 import React from "react";
-import Sub from "./assets/sub.webp";
+import Sub from "./assets/sub.jpg";
 import "./Sub.css"
 
 export default function SubSection() {

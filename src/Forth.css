@@ -1,0 +1,12 @@
+.LetsConnect {
+  background-color: #4caf50; /* or whatever your normal color is */
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.LetsConnect:hover {
+  background-color: rgb(133, 204, 228);
+}

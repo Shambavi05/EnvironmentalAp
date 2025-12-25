@@ -10,18 +10,49 @@
 }
 
 .LetsConnect:hover{
-    background-color: darkgreen;
+    background-color: rgb(29, 172, 255);
 }
 
-/* Hero.css or your CSS file */
-.flippingImage {
-  width: 600px;
-  height: 500px;
-  border-radius: 10px;
-  transition: transform 0.6s; /* smooth animation */
-  transform-style: preserve-3d;
+@media (max-width: 900px) {
+  /* Convert grid to stacked layout */
+  .SubSectionContainer {
+    display: block !important;
+    height: auto !important;
+  }
 }
 
-.flippingImage:hover {
-  transform: rotateY(180deg); /* flips horizontally */
+/* Target the inline-styled parent safely */
+@media (max-width: 900px) {
+  div[style*="gridTemplateColumns"] {
+    display: block !important;
+    height: auto !important;
+    padding: 15px !important;
+  }
+
+  /* Image responsiveness */
+  .flippingImage {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Text adjustments */
+  h2 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    text-align: justify;
+  }
+
+  /* Button alignment */
+  .LetsConnect {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
 }

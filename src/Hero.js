@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "./assets/hero.jpg";
+import heroImage from "./assets/hero.png";
 import "./Hero.css";
 
 export default function Hero() {
@@ -8,7 +8,7 @@ export default function Hero() {
   style={{
     height: "100vh",
     position: "relative",
-    backgroundImage: `url(${heroImage})`,
+    backgroundImage: `linear-gradient(rgba(15, 58, 44, 0.65), rgba(8, 8, 8, 0.65)), url(${heroImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",
@@ -35,11 +35,12 @@ export default function Hero() {
 
   {/* Text on top */}
   <div style={{ zIndex: 2 }}>
-    <h1 style={{ fontSize: "48px", fontWeight: "bold", marginBottom: "20px" }}>
-      Leading Experts in Sustainable <br />
-      Land Development & <br />
-      Reforestation
-    </h1>
+    <h1 style={{ fontSize: "80px", marginBottom: "20px" }}>
+  Leading Experts in Sustainable <br />
+  <span className="highlight-text">Land Development &</span> <br />
+  Reforestation
+</h1>
+
 
     <p style={{ fontSize: "20px", margin: "0 auto" }}>
       Enviro Forest delivers eco-friendly land solutions, forest restoration services, and <br />
@@ -47,7 +48,7 @@ export default function Hero() {
     </p> 
     <br />
     <button className="LearnMore">
-    Learn More
+    Start Your Green Journey Today
   </button>
   </div>
 </section>

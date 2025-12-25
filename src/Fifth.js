@@ -1,12 +1,16 @@
 import React from "react";
 import serviceImg from "./assets/service.jpg"; // left image
-import "./Fifth.css"
+import EcologyIcon from "./assets/Ecology-icon.png";
+import SignIcon from "./assets/Sign-icon.png";
+import CarbonFootprint from "./assets/Carbon-footprint-icon.png";
+import ReportIcon from "./assets/Report-icon.png";
+import ControlsIcon from "./assets/Controls-icon.png";
 
 export default function ServicesSection() {
   return (
     <section style={sectionStyle}>
       <div style={containerStyle}>
-        
+
         {/* LEFT SIDE */}
         <div style={leftStyle}>
           <span style={badgeStyle}>OUR SERVICE</span>
@@ -15,58 +19,49 @@ export default function ServicesSection() {
           </h2>
 
           <div style={imageCardStyle}>
-            <img
-              src={serviceImg}
-              alt="service"
-              style={imageStyle}
-            />
+            <img src={serviceImg} alt="service" style={imageStyle} />
           </div>
         </div>
 
         {/* RIGHT SIDE */}
         <div style={rightGridStyle}>
-          <div className="flippingCard">
+
           <ServiceCard
+            icon={EcologyIcon}
             title="Afforestation & Reforestation Projects"
             text="We design and implement large-scale tree planting initiatives to restore degraded land, improve biodiversity, and combat climate change through carbon sequestration."
           />
-          </div>
 
-          <div className="flippingCard">
           <ServiceCard
+            icon={ControlsIcon}
             title="Eco-Maintenance & Monitoring"
             text="Ongoing care and ecological monitoring ensure long-term health of restored environments, with data-driven insights to track vegetation growth, soil quality, and ecosystem recovery."
           />
-          </div>
 
-
-          <div className="flippingCard">
           <ServiceCard
+            icon={SignIcon}
             title="Sustainable Land Use & Site Planning"
             text="We provide expert land assessment and ecological planning to help developers, communities, and governments build responsibly while preserving natural resources."
           />
-          </div>
 
-
-          <div className="flippingCard">
           <ServiceCard
+            icon={CarbonFootprint}
             title="Carbon Footprint Offset Programs"
             text="Our certified offset programs allow businesses to neutralize emissions through verified carbon sequestration projects like reforestation and habitat restoration."
           />
-          </div>
 
-
-          <div className="flippingCard">
           <ServiceCard
+            icon={ReportIcon}
             title="Environmental Impact Reports & Compliance"
             text="We deliver detailed environmental assessments aligned with regulatory standards, helping you navigate compliance, minimize risks, and operate sustainably."
           />
-          </div>
-          </div>
+
         </div>
+      </div>
     </section>
   );
 }
+
 function ServiceCard({ icon, title, text }) {
   return (
     <div style={cardStyle}>

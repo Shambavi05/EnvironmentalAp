@@ -15,20 +15,18 @@ export default function ThirdSec() {
         padding: "20px",
         alignItems: "center",
         
-        backgroundImage: `url(${background})`,
+        backgroundImage: `linear-gradient(rgba(0, 60, 40, 0.65), rgba(0, 60, 40, 0.65)), url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         
       }}
-
-      
     >
       {/* Left column: Text + Buttons */}
-<div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
+      <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
   }}
 >
   <h2 style={{ fontSize: "30px", marginBottom: "20px" }}>
@@ -49,8 +47,8 @@ export default function ThirdSec() {
 
   {/* Buttons */}
   <div className="button-container">
-    <button className="btn btn-muted">GAO Tek TekSummit</button>
-    <button className="btn btn-primary">GAO RFID TekSummit</button>
+    <button className="btn">GAO Tek TekSummit</button>
+    <button className="btn">GAO RFID TekSummit</button>
   </div>
 </div>
 
